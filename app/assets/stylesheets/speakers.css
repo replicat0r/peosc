@@ -6,7 +6,7 @@
 /* Needed for a fluid height: */
 
 /* main wrapper */
- .cbp-contentslider {
+ .speakers .cbp-contentslider {
     width: 760px;
     height: 550px;
     margin: 0 auto;
@@ -103,7 +103,7 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
-.cbp-contentslider .cbp-content {
+.speakers .cbp-contentslider .cbp-content {
     float:right;
     vertical-align: top;
     padding: 1.5em 0;
@@ -116,7 +116,7 @@
     font-size: 1em;
 }
 
-.cbp-content img{
+.speakers .cbp-content img{
  margin-right:1em ;   
     float:left;
 }

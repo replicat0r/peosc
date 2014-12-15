@@ -7,6 +7,7 @@ Peosc::Application.routes.draw do
   get '/conference' => 'home#conference'
   get '/sponsors' => 'home#sponsors'
     get '/contact' => 'home#contact'
+    get '/mobile' => 'home#mobile'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

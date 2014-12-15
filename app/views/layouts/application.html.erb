@@ -20,9 +20,12 @@
       <%= csrf_meta_tags %>
       
     </head>
-    <body>
+    <body class="<%= controller.action_name %>">
+      <div class="animsition">
       <%= render 'layouts/menu' %>
+      
       <%= yield %>
       <div class="md-overlay"></div>
+    </div>
     </body>
   </html>

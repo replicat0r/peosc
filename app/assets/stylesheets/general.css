@@ -14,6 +14,9 @@
     width: 90%;
     display: inline;
     float: left;
+    font-weight: 300;
+    line-height: 1.2;
+    padding-left:10px;
 }
 #heading h2 {
     text-align: left;

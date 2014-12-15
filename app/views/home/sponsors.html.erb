@@ -1,78 +1,85 @@
-  <div class="md-modal md-effect-12" id="modal-12">
-            <div class="md-content">
-                <div id="sponsor">
-                    <h3>Current Sponsors</h3>
-                    <p>On behalf of engineering students across Ontario, the Professional Engineers Ontario Student Conference Committee would like to extend our gratitude to all our sponsors. Without our sponsors, this conference would not be possible. Special thanks goes to our two Partners Professional Engineers Ontario and Lassonde School of Engineering.</p>
-                    <p>List of Sponsors:</p>
-                    <ul>
-                        <li>Professional Engineering Ontario (PEO)</li>
-                        <li>Lassonde School of Engineering</li>
-                        <li>Alta Concrete Structures Inc.</li>
-                        <li>Magna International Inc.</li>
-                        <li>Job Postings</li>
-                        <li>Consulting Engineers Ontario (CEO)</li>
-                        <li>Ierfino & Associates</li>
-                        <li>CasB Media Inc.</li>
-                    </ul>
-                </div>
-                <div id="cbp-contentslider" class="cbp-contentslider">
-                    <ul>
-                        <li id="slide1">
-                            <div>
-                                <div class="cbp-content">
-                                    <img src="images/york.png">
-                                    <img src="images/peo.png">
-                                </div>
-                            </div>
-                        </li>
-                        <li id="slide2">
-                            <div>
-                                <div class="cbp-content">
-                                    <img src="images/alta.png">
-                                </div>
-                            </div>
-                        </li>
-                        <li id="slide3">
-                            <div>
-                                <div class="cbp-content">
-                                    <img src="images/job.png">
-                                    <img src="images/magna.png">
-                                </div>
-                            </div>
-                        </li>
-                        <li id="slide4">
-                            <div>
-                                <div class="cbp-content">
-                                    <img src="images/CEO.png">
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <nav>
-                        <a href="#slide1">
-                            <span>Partners</span>
-                        </a>
-                        <a href="#slide2">
-                            <span>Platinum</span>
-                        </a>
-                        <a href="#slide3">
-                            <span>Gold</span>
-                        </a>
-                        <a href="#slide4">
-                            <span>Silver</span>
-                        </a>
-                    </nav>
-                </div>
-                <button class="md-close">Close</button>
-            </div>
+<div class="md-modal md-effect-12" id="modal-12">
+    <div class="md-content">
+        <div id="sponsor">
+            <h3>Current Sponsors</h3>
+            <p>On behalf of engineering students across Ontario, the Professional Engineers Ontario Student Conference Committee would like to extend our gratitude to all our sponsors. Without our sponsors, this conference would not be possible. Special thanks goes to our two Partners Professional Engineers Ontario and Lassonde School of Engineering.</p>
+            <p>List of Sponsors:</p>
+            <ul>
+                <li>Professional Engineering Ontario (PEO)</li>
+                <li>Lassonde School of Engineering</li>
+                <li>Alta Concrete Structures Inc.</li>
+                <li>Magna International Inc.</li>
+                <li>Job Postings</li>
+                <li>Consulting Engineers Ontario (CEO)</li>
+                <li>Ierfino & Associates</li>
+                <li>CasB Media Inc.</li>
+            </ul>
         </div>
-       
+        <div id="cbp-contentslider" class="cbp-contentslider">
+            <ul>
+                <li id="slide1">
+                    <div>
+                        <div class="cbp-content">
+                            
+                            <%= image_tag("york.png", width: '35%') %>
+                            <%= image_tag("peo.png", width: '60%') %>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide2">
+                    <div>
+                        <div class="cbp-content">
+                            <%= image_tag("alta.png") %>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide3">
+                    <div>
+                        <div class="cbp-content">
+                            
+                            <%= image_tag("job.png") %>
+                            <%= image_tag("magna.png") %>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide4">
+                    <div>
+                        <div class="cbp-content">
+                            <%= image_tag("CEO.png") %>
+                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <nav>
+                <a href="#slide1">
+                    <span>Partners</span>
+                </a>
+                <a href="#slide2">
+                    <span>Platinum</span>
+                </a>
+                <a href="#slide3">
+                    <span>Gold</span>
+                </a>
+                <a href="#slide4">
+                    <span>Silver</span>
+                </a>
+            </nav>
+        </div>
+        <button class="md-close">Close</button>
+    </div>
+</div>
+
 <section>
     <%= render 'layouts/logo' %>
+   
+    <div class="content_bg ">
     <h3>Sponsors for the Event</h3>
     <p>The continued success of PEOSC is an indication of the relationships that have been built with sponsors. Due to their generous help, we are able to provide a wide range of speakers and workshops to show students and potential professional engineers the limitless potential that engineering has to offer as well as how we can change the world. PEOSC 2013 would not be possible without the support of our valuable sponsors. Sponsors for the Professional Engineers Ontario Student Conference 2013 will be released shortly. For information on how you can support PEOSC 2013 and to view the different levels of sponsorship, please review our Sponsorship Package.</p>
+
     <div class="clearfix buttonbox">
         <a id="sponsorbutton" href="Sponsorship.pdf">Download Sponsorship Package</a>
         <button class="md-trigger mapbutton" data-modal="modal-12">Sponsors</button>
+    </div>
     </div>
 </section>

@@ -3,7 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-body{
-  background-image: url(image_path("bg/bg1.jpg"));
-
+.contact{
+  background-image: url(image_path("bg/bg7.jpg"));
+}.events{
+  background-image: url(image_path("bg/bg4.jpg"));
+}.speakers{
+  background-image: url(image_path("bg/bg3.jpg"));
+}.conference{
+  background-image: url(image_path("bg/bg5.jpg"));
+}.sponsors{
+  background-image: url(image_path("bg/bg6.jpg"));
 }
+.about{
+  background-image: url(image_path("bg/bg2.jpg"));
+}
+.index{
+  background-image: url(image_path("bg/bg1.jpg"));
+}
+
+
+     
+

@@ -1,0 +1,56 @@
+/* COUNTER */
+
+
+
+#counter-wrapper {
+
+	position: absolute;
+	margin-left:7%;
+    width:55%;
+}
+.countdown_section {
+    opacity:0.8;
+	/* Internet Explorer 10 */
+	display: -ms-flexbox;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	/* Firefox */
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	/* Safari, Opera, and Chrome */
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	/* W3C */
+	display: box;
+	box-pack: center;
+	box-align: center;
+	
+                    
+    width: 7.500em;
+	height: 7.500em;
+	float: left;
+
+    text-align: center;
+	border-width: 3px;
+	border-style: solid;
+	border-color: white;
+	color: #f8f6ee;
+	 /* size dynamic to this font */
+	-webkit-border-radius: 120px;
+	-moz-border-radius: 120px;
+	border-radius: 120px;
+    margin-top:1.875em;
+    margin-left:1.875em;
+}
+.countdown_amount {
+	font-size: 2.1em;
+	text-align: center;
+line-height:3em;
+}
+.countdown_day {
+	text-align: center;
+	font-size: 80%;
+    bottom:20px;
+}

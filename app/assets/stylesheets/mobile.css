@@ -135,6 +135,7 @@
      }
      #timer {
          font-size: 0.75em;
+         margin-top:100px;
      }
      section {
          font-size: 75%;
@@ -144,7 +145,7 @@
          font-size: 25px;
      }
      section p {
-         font-size: 13px;
+         font-size: 13px!important;
      }
  }
  @media only screen and (max-width: 620px) {

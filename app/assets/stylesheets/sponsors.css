@@ -6,7 +6,7 @@
 /* Needed for a fluid height: */
 
 /* main wrapper */
- .cbp-contentslider {
+ .sponsors .cbp-contentslider {
     width: 760px;
     height: 400px;
     margin: 0 auto;
@@ -111,7 +111,7 @@
     font-size: 1em;
 }
 
-.cbp-content img{
+.sponsors .cbp-content img{
 
  margin-right:1em ;   
 

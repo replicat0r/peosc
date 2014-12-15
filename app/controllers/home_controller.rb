@@ -13,5 +13,8 @@ class HomeController < ApplicationController
   end
   def conference
   end
+  def mobile
+    render layout: false
+  end
 end
 
