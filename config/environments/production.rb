@@ -1,4 +1,4 @@
-Peosc::Application.configure do
+Hs::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -21,6 +21,26 @@ Peosc::Application.configure do
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = false
+
+  # config.assets.precompile += %w( *.js )
+  # config.assets.precompile += %w( index/*.css )
+  # config.assets.precompile += %w( dashboard/*.css )
+
+  config.assets.precompile << Proc.new { |path|
+    if path =~ /\.(css|js)\z/
+      full_path = Rails.application.assets.resolve(path).to_path
+      app_assets_path = Rails.root.join('app', 'assets').to_path
+      if full_path.starts_with? app_assets_path
+        puts "including asset: " + full_path
+        true
+      else
+        puts "excluding asset: " + full_path
+        false
+      end
+    else
+      false
+    end
+  }
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -71,6 +91,8 @@ Peosc::Application.configure do
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
+  # config.force_ssl = true
+
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
