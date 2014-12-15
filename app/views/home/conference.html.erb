@@ -1,0 +1,50 @@
+ <div class="md-modal md-effect-12" id="modal-12">
+            <div class="md-content">
+                <h3>Conference Venue Details</h3>
+                <div>
+                    <script>
+                        $(function() {
+                            $("#map").goMap({
+                                scaleControl: true,
+                                maptype: 'ROADMAP',
+                                zoom: 15,
+
+                                markers: [{
+                                        latitude: 43.655546,
+                                        longitude: -79.386055,
+                                        title: 'The Metropolitan'
+                                    }
+                                ]
+
+                            });
+                        });
+                    </script>
+                    <div class="top">
+                        <div id="map"></div>
+                        <img src="images/met.jpg" width="290px" />
+                        <img src="images/met2.jpg" width="290px" />
+                    </div>
+                    <div class="bottom">
+                        <p>Metropolitan Hotel Toronto to be reflagged as Doubletree by Hilton in the fall of 2013 is centrally located in the heart of Downtown Toronto’s financial, research and shopping districts. Its versatility renders the hotel as the best venue to host PEOSC.</p>
+                        <p>Venue Address: 108 Chestnut St. Toronto, ON M5G1R3</p>
+                        <p>Subway(From Union Station): Take the Northbound University line and get off at St. Patrick station. Walk West on Dundas St. W. Make a right onto Chestnut St. Destination will be on your right.</p>
+                    </div>
+                    <button class="md-close">Close</button>
+                </div>
+            </div>
+        </div>
+        
+<section>
+    
+    <%= render 'layouts/logo' %>
+    <p>The executive committee for PEOSC is hard at work planning a fun filled and eventful weekend. Delegates will have the opportunity to meet student leaders across Ontario, experience the city of Toronto as well as communicate with industry professionals, renowned keynote speakers and experience professional development workshops.<br><br>Please note that to register for the event you must first log into job posting if you have an account or register for one and then open the event registration link</p>
+    <div class="clearfix buttonbox">
+        <a href="schedule.pdf">
+            <button class="mapbutton ">itinerary</button>
+        </a>
+        <button class="md-trigger mapbutton" data-modal="modal-12">Venue&nbsp;Details</button>
+        <a href="http://www.jobpostings.ca/gotoevents/2013-11/129764">
+            <button class="mapbutton">Registration</button>
+        </a>
+    </div>
+</section>

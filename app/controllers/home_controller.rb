@@ -5,4 +5,13 @@ class HomeController < ApplicationController
   end
   def contact
   end
+  def events
+  end
+  def sponsors
+  end
+  def speakers
+  end
+  def conference
+  end
 end
+

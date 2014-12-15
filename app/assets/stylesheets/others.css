@@ -13,9 +13,7 @@
 .logo_header h1 {
     font-family:'roboto';
     font-weight:300;
-    position:absolute;
-    display:inline-block;
-    float:right;
+    display:block;
     color:white;
     margin-left:0.5em;
 }
@@ -23,6 +21,7 @@
     display: block;
     width: 15%;
     float: left;
+    margin-right: 0.5em;
 }
 #about_content {
     background-color: rgba(0, 0, 0, 0.5);

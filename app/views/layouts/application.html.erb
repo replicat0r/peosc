@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <title>Professional Engineering Of Ontario Student Conference</title>
-        <meta name="description" content="Professional Engineering Of Ontario Student Conference is hosted by EngSoc at York University this year, the theme is Engineers changing the world" />
-        <meta name="keywords" content="PEOSC 2013, Professional ontario engineers, student conference, York University, Lassonde School of Engineering,change the world" />
-        <meta name="author" content=" Tyler,Xiao Liu" />
-        <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  
-</head>
-<body class="container">
-<%= render 'layouts/menu' %>
-<%= yield %>
-
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Professional Engineering Of Ontario Student Conference</title>
+    <meta name="description" content="Professional Engineering Of Ontario Student Conference is hosted by EngSoc at York University this year, the theme is Engineers changing the world" />
+    <meta name="keywords" content="PEOSC 2013, Professional ontario engineers, student conference, York University, Lassonde School of Engineering,change the world" />
+    <meta name="author" content=" Tyler,Xiao Liu" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+      <script>
+      // this is important for IEs
+      var polyfilter_scriptpath = '/js/';
+      </script>
+      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+      <%= stylesheet_link_tag    "application", media: "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+      
+    </head>
+    <body>
+      <%= render 'layouts/menu' %>
+      <%= yield %>
+      <div class="md-overlay"></div>
+    </body>
+  </html>

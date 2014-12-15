@@ -1,0 +1,50 @@
+        <div class="md-modal md-effect-12" id="modal-12">
+            <div class="md-content">
+                <h3>How to Get to the Event</h3>
+                <div>
+                    <script>
+                        $(function() {
+                            $('.closed').click(function() {
+                                alert("Registration will be open soon, please check back later.");
+                            });
+
+                        });
+
+                        $(function() {
+                            $("#map").goMap({
+                                scaleControl: true,
+                                maptype: 'ROADMAP',
+                                zoom: 15,
+
+                                markers: [{
+                                        latitude: 43.664038,
+                                        longitude: -79.392124,
+                                        title: 'Queens Park'
+                                    }
+                                ]
+
+                            });
+                        });
+                    </script>
+                    <div id="map"></div>
+                    <p>Directions from the Hotel</p>
+                    <p>Driving Directions: (5min)
+                        <br>Proceed North on Chestnut Street. Make Left onto Dundas St. W. Make Right onto University Avenue. Continue onto Queens Park Crescent. Make a Left on Wellesley. Destination will be on your right.</p>
+                    <p>Subway Directions: (15 min)
+                        <br>Walk to St. Patrick Station. Take North bound train and get off at Queens Park station. Walk North on Queens Park Crescent. Make left at Wellesley. Destination will be on your right.</p>
+                    <button class="md-close">Close</button>
+                </div>
+            </div>
+        </div>
+<section>
+    <%= render 'layouts/logo' %>
+    <h3>Queen’s Park Visit (lunch included)</h3>
+    <p>Professional Engineers Ontario is offering a special opportunity for delegates to visit Queen’s Park on Friday, November 15th, 2013 prior to the official start of PEOSC events. You will have the opportunity to tour the legislative assembly, hear how engineers can influence public policy, and meet and have lunch in the legislative dining room with an MPP, courtesy of PEO. <br> <br>There are a limited number of spots for this opportunity, indicate your interest in attending the PEO event on the Conference Registration Form.</p>
+    <p>Date: Friday, November 15th, 2013
+    <br>Time: 11:00am – 2:00pm
+    <br>Location: Queen’s Park 111 Wellesley St West, Toronto
+    <br>Cost: Free!</p>
+    <div class="clearfix buttonbox">
+        <button class="md-trigger mapbutton" data-modal="modal-12">Directions</button>
+    </div>
+</section>
