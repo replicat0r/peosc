@@ -12,13 +12,12 @@
 }
 .logo_header h1 {
     font-family:'roboto';
-    font-weight:100;
+    font-weight:300;
     position:absolute;
-    display:inline;
-    font-size:38px;
+    display:inline-block;
     float:right;
     color:white;
-    margin-top:0.5em;
+    margin-left:0.5em;
 }
 .logo_header img {
     display: block;
@@ -32,7 +31,8 @@ section p {
     font-size:18px;
     padding:1.1em;
     line-height:1.2em;
-    / margin-top:0em;
+     margin-top:0em;
+     font-weight: 100;
 }
 #about_content p:last-child {
     padding-top:0;
