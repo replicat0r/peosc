@@ -1,0 +1,240 @@
+ @media only screen and (min-width: 1600px) {
+     #heading h1 {
+         font-size: 50px;
+     }
+     #heading h2 {
+         font-size: 25px;
+     }
+     #timer h3 {
+         font-size: 40px;
+     }
+     .cn-button, .csstransforms .cn-wrapper {
+         left: 75%;
+     }
+     .countdown_section {
+         font-size: 1.15em;
+     }
+     #timer {
+         font-size: 1.2em;
+     }
+ }
+ @media only screen and (max-width: 1600px) {
+     #heading h1 {
+         font-size: 36px;
+     }
+     #heading h2 {
+         font-size: 18px;
+     }
+     #timer {
+         font-size: 0.9em;
+     }
+     #dates h3 {
+         font-size: 2em
+     }
+     section {
+         font-size: 85%;
+     }
+     .logo_header h1 {
+         font-size: 32px;
+     }
+     section p {
+         font-size: 17px;
+     }
+ }
+ @media only screen and (max-width: 1440px) {
+     #heading h1 {
+         font-size: 36px;
+     }
+     #heading h2 {
+         font-size: 18px;
+     }
+     .countdown_section {
+         font-size: 1em;
+     }
+     #timer {
+         font-size: 0.90em;
+     }
+     #dates h3 {
+         font-size: 2em
+     }
+     section {
+         font-size: 85%;
+     }
+     .logo_header h1 {
+         font-size: 32px;
+     }
+     section p {
+         font-size: 17px;
+     }
+     .cn-button {
+         font-size: 1.5em;
+     }
+     .csstransforms .cn-wrapper {
+         font-size: .85em;
+     }
+ }
+ @media only screen and (max-width: 1024px) {
+     #heading h1 {
+         font-size: 30px;
+     }
+     #heading h2 {
+         font-size: 15px;
+     }
+     .csstransforms .cn-wrapper {
+         font-size: .68em;
+         top:300px;
+     }
+     .cn-button {
+         font-size: 1.5em;
+         top:300px;
+     }
+     .countdown_section {
+         font-size: 0.94em;
+     }
+     #timer {
+         font-size: 0.82em;
+     }
+     section {
+         font-size: 75%;
+     }
+     .logo_header h1 {
+         font-size: 28px;
+     }
+     section p {
+         font-size: 15px;
+     }
+     #map {
+         width:600px;
+         height:350px;
+     }
+     #dates {
+         right:2em;
+     }
+ }
+ @media only screen and (max-width: 800px) {
+     #heading {
+         width: 55%;
+         top: 110px;
+         left:50px;
+     }
+     #heading h2 {
+         font-size: 13px;
+         float: right;
+         width: 80%;
+     }
+     .csstransforms .cn-wrapper {
+         font-size: .65em;
+         top:370px;
+     }
+     .cn-button {
+         top:370px;
+         font-size: 1.4em;
+     }
+     .countdown_section {
+         font-size: 0.9em;
+     }
+     #timer {
+         font-size: 0.75em;
+     }
+     section {
+         font-size: 75%;
+         left:-3em;
+     }
+     .logo_header h1 {
+         font-size: 25px;
+     }
+     section p {
+         font-size: 13px;
+     }
+ }
+ @media only screen and (max-width: 620px) {
+     .no-csstransforms li {
+         width: 4em;
+         height: 4em;
+         line-height: 4em;
+     }
+ }
+ @media only screen and (max-width: 500px) {
+     .no-ccstransforms .cn-wrapper {
+         padding: .5em;
+     }
+     .no-csstransforms .cn-wrapper li {
+         width: 4em;
+         height: 4em;
+         font-size: .9em;
+         line-height: 4em;
+     }
+ }
+ @media only screen and (max-width: 480px) {
+     .csstransforms .cn-wrapper {
+         font-size: .58em;
+     }
+     .cn-button {
+         font-size: 1em;
+     }
+ }
+ @media only screen and (max-width: 320px) {
+     .csstransforms .cn-wrapper {
+         font-size: .50em;
+         top:380px;
+         left:160px;
+     }
+     .cn-button {
+         left:160px;
+         top:380px;
+         font-size: 1em;
+     }
+     #timer {
+         display:none;
+     }
+     #heading {
+         top:50px;
+     }
+     #heading h1 {
+         font-size: 20px;
+     }
+     #heading h2 {
+         font-size: 12px;
+     }
+     .logo_header h1 {
+         font-size:20px;
+     }
+     section {
+         width:28em;
+     }
+     section p {
+         width:100%;
+         font-size:12px;
+     }
+     section h3 {
+         font-size:18px;
+     }
+ }
+
+
+footer {
+    position:absolute;
+    height:30px;
+    width:100%;
+    bottom:0px;
+}
+footer h4 {
+    font-size:0.9em;
+    text-align:center;
+    line-height:30px;
+}
+
+footer h4 a{
+    color:white;
+    opacity:0.8;
+    text-decoration:underline;
+}
+footer h4 a:hover{
+        color:white;
+
+    opacity:1;
+}
+
+footer h4 a:link,  a:active  a:visited{
+    color:white;
+}

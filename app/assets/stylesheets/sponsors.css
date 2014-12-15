@@ -1,0 +1,151 @@
+ *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Needed for a fluid height: */
+
+/* main wrapper */
+ .cbp-contentslider {
+    width: 760px;
+    height: 400px;
+    margin: 0 auto;
+    padding:1em;
+
+}
+.cbp-contentslider > ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.cbp-contentslider > ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 1em;
+}
+/* Whithout JS, we use :target */
+ .cbp-contentslider > ul li:target {
+    z-index: 100;
+}
+.cbp-contentslider nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5em;
+    z-index: 1000;
+    margin:0 auto;
+
+    overflow: hidden;
+}
+.cbp-contentslider nav a {
+    float: left;
+    display: block;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+    outline: none;
+    text-align: center;
+    line-height: 2.5em;
+    position: relative;
+    -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.cbp-contentslider nav a span {
+    display: block;
+}
+.cbp-contentslider nav a:last-child {
+    border: none;
+    /*box-shadow: 1px 0 #47a3da;  fills gap caused by rounding */
+}
+.cbp-contentslider nav a {
+    text-decoration: none;
+}
+.cbp-contentslider nav a:hover {
+    background-color: rgba(175, 175, 175, 0.5);
+    color: #fff;
+}
+.cbp-contentslider nav a.rc-active {
+    background-color: rgba(175, 175, 175, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+.cbp-contentslider h3 {
+    font-size: 2.5em;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 0 0.3em;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 0.2em;
+    padding: 0 0.2em 0 0;
+    border-bottom: 4px solid #fff;
+}
+.cbp-contentslider li > div {
+    position: absolute;
+
+    width: 100%;
+    left: 0;
+    padding: 0 1em;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.cbp-contentslider .cbp-content {
+    vertical-align: top;
+    height:100%;
+}
+.cbp-content p {
+    color: #fff;
+    padding-top: 2em;
+    margin: 0;
+    font-size: 1em;
+}
+
+.cbp-content img{
+
+ margin-right:1em ;   
+
+    float:left;
+}
+/* Media queries */
+ @media screen and (max-width: 70em) {
+    .cbp-contentslider p {
+        font-size: 100%;
+    }
+}
+@media screen and (max-width: 67.75em) {
+    .cbp-contentslider {
+        font-size: 85%;
+    }
+
+}
+@media screen and (max-width: 43em) {
+    .cbp-contentslider h3 {
+        font-size: 2em;
+    }
+    .cbp-contentslider .cbp-content {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        -o-column-count: 1;
+        column-count: 1;
+    }
+    .cbp-contentslider li > div {
+        top: 5em;
+    }
+}
+@media screen and (max-width: 25em) {
+    .cbp-contentslider nav a {
+        padding: 0;
+    }
+
+}
